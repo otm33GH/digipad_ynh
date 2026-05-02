@@ -42,7 +42,7 @@ ram.runtime = "300M"
     default = "visitors"
 
     [install.authprovider]
-    type = "list"
+    type = "select"
     choices = ["yeswiki", "baserow"]
     
     [install.test]

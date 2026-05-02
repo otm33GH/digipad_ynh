@@ -41,11 +41,17 @@ ram.runtime = "300M"
     type = "group"
     default = "visitors"
 
-    [install.password]
+    [install.authprovider]
+    type = "list"
+    choices = ["yeswiki", "baserow"]
+    
+    [install.test]
+    visible = "authprovider == 'yeswiki'"
+      
+    [install.test.password]
     help.en = "Password to access the administration page `/admin`"
     help.fr ="Mot de passe pour accéder à la page d'administration `/admin`"
-    type = "string"
-    redact = true
+    type = "password"
 
     [install.create_account]
     ask.en = "Allow account creation"

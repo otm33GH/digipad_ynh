@@ -44,9 +44,6 @@ ram.runtime = "300M"
     [install.authprovider]
     type = "select"
     choices = ["yeswiki", "baserow"]
-    
-    [install.test]
-    visible = "authprovider == 'yeswiki'"
       
     [install.password]
     help.en = "Password to access the administration page `/admin`"

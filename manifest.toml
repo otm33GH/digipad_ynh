@@ -44,7 +44,8 @@ ram.runtime = "300M"
     [install.password]
     help.en = "Password to access the administration page `/admin`"
     help.fr ="Mot de passe pour accéder à la page d'administration `/admin`"
-    type = "password"
+    type = "string"
+    redact = true
 
     [install.create_account]
     ask.en = "Allow account creation"
